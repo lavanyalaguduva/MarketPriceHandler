@@ -1,4 +1,17 @@
 # Market Price Handler Test Automation
+##Test Strategy
+###Goal
+To make sure the web/mobile application displays
+the new bid and ask price of an instrument as and when the new prices are fed to the backend service.
+
+###Types of testing to be performed
+- Unit Testing
+- Integration Testing
+- UI Component Testing
+- End-2-End Testing
+- Performance Testing
+- Load Testing
+- Accessibility Testing
 
 ## Integration Test Scenarios
 1. Check whether the service processes all the prices that are fed
@@ -9,11 +22,11 @@
 
 ## Framework Details
 
-The above scenarios have been automated Rest Assured, Junit. Wiremock is used to mock the service.
+The above scenarios have been automated using Rest Assured, Junit. Wiremock is used to mock the service.
 
 ### Code Structure
 
-This project can be imported as a maven in the IDE.
+This project can be imported as a maven project pomin the IDE.
 
 Consists of mainly two folders:
 
@@ -29,7 +42,7 @@ Rest Assured APIs are used to test the service endpoints.
 ### Commands
 Following maven command can be used to run the tests.
 
-`mvn clean verify`
+`mvn clean test`
 
 ### Test Improvements
 1. Feed the data in wrong format and check whether the service is throwing a valid error
@@ -38,20 +51,6 @@ Following maven command can be used to run the tests.
 ### Mock Improvements
 1. Add an endpoint to fetch price history between two timestamps
 2. Add an endpoint to fetch price history for an instrument between two timestamps
-
-##Test Strategy
-###Goal
-The goal of end-2-end test would to make sure the web/mobile application displays 
-the new bid and ask price of an instrument at all times as and when the new prices are fed to the backend service.
-
-###Types of testing
-- Unit Testing
-- Integration Testing
-- UI Component Testing
-- End-2-End Testing
-- Performance Testing
-- Load Testing
-- Accessibility Testing
 
 ### End-2-End Test Scenarios
 ####Setup Assumptions
