@@ -1,10 +1,10 @@
 # Market Price Handler Test Automation
-##Test Strategy
-###Goal
+## Test Strategy
+### Goal
 To make sure the web/mobile application displays
 the new bid and ask price of an instrument as and when the new prices are fed to the backend service.
 
-###Types of testing to be performed
+### Types of testing to be performed
 - Unit Testing
 - Integration Testing
 - UI Component Testing
@@ -42,7 +42,7 @@ Rest Assured APIs are used to test the service endpoints.
 ### Commands
 Following maven command can be used to run the tests.
 
-`mvn clean test`
+`mvn clean test:`
 
 ### Test Improvements
 1. Feed the data in wrong format and check whether the service is throwing a valid error
@@ -53,19 +53,19 @@ Following maven command can be used to run the tests.
 2. Add an endpoint to fetch price history for an instrument between two timestamps
 
 ### End-2-End Test Scenarios
-####Setup Assumptions
+#### Setup Assumptions
 In the lower test environments the price data feed can be controlled and mimicked, 
 so that the expected output can be figured out. 
 The feed data can up uploaded through an interface
 
-####Automation tools
+#### Automation tools
 Selenium
 Java/Javascript/Python
 Cucumber
 Junit/Testng
 Jenkins for CI/CD
 
-####Scenarios
+#### Scenarios
 1. Feed the price data with multiple prices for each instrument through an interface 
    and check whether the latest price is displayed in the UI
 2. Feed the updated price for an instrument and check the other instruments are displaying the valid price
