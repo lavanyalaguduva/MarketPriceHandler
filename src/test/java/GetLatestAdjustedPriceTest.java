@@ -62,8 +62,4 @@ public class GetLatestAdjustedPriceTest {
 
     }
 
-//    @AfterAll
-//    public static void tearDown() {
-//        CommonMethods.tearDown();
-//    }
 }

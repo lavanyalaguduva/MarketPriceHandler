@@ -89,11 +89,6 @@ public class GetAllAdjustedPricesTest {
             assertEquals( expectedAdjustedAskPrice, df.format(adjustedAskPrice), "ask margin is not applied correctly");
         }
     }
-//
-//    @AfterAll
-//    public static void tearDown() {
-//        CommonMethods.tearDown();
-//    }
 
     private Response sendAllPricesRequest() {
         return RestAssured.given()
