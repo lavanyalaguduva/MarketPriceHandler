@@ -26,7 +26,7 @@ The above scenarios have been automated using Rest Assured, Junit. Wiremock is u
 
 ### Code Structure
 
-This project can be imported as a maven project pomin the IDE.
+This project can be imported as a maven project in the IDE.
 
 Consists of mainly two folders:
 
@@ -68,10 +68,10 @@ Jenkins for CI/CD
 #### Scenarios
 1. Feed the price data with multiple prices for each instrument through an interface 
    and check whether the latest price is displayed in the UI
-2. Feed the updated price for an instrument and check the other instruments are displaying the valid price
+2. Feed the updated price for an instrument and check the other instruments are still displaying the valid price
 3. Check whether the price transition in the UI is noticeable
    (Assuming the tile is displayed in red is price increases or green if price decreases)
 4. Check whether tile for an instrument displays the adjusted bid price and ask price 
-   and not the bid/ask prices that are fed
+   and not the original bid/ask prices that are fed
 5. Check whether the UI is responsive when the browser is resized and prices are still clearly visible
-6. Check whether the screen reader can rad out the instrument name followed by the prices when the tile is in focus
+6. Check whether the screen reader can read out the instrument name followed by the prices when the tile is in focus
